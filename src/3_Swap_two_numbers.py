@@ -1,5 +1,4 @@
 """ 3. Swap two numbers. """
-"""3_Swap_two_numbers"""
 
 num1 = int(input("Enter first num"))
 num2 = int(input("Enter second number"))
