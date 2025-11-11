@@ -1,14 +1,16 @@
-def count_distinct_substrings(s: str) -> int:
-    n = len(s)
-    substrings = set()
+""" 22. Check if a string is a palindrome"""
 
-    for i in range(n):
-        for j in range(i+1, n+1):
-            print(s[i:j])
-            substrings.add(s[i:j])
+usr_str = input("enter the string:")
 
-    return len(substrings)
+def check_palindrome(s):
+    print(s)
+    rev = ""
+    for char in s:
+        rev = char + rev
+    print(rev)
+    if s == rev:
+        print(f"{s} is a palindrome")
+    else:
+        print(f"{s} is not a palindrome")
 
-# Example usage:
-input_str = "abc"
-print(count_distinct_substrings(input_str))
+check_palindrome(usr_str)
