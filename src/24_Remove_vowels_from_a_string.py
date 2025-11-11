@@ -1,17 +1,14 @@
-j = [
-	{
-		"id": "1",
-		"name": "Jane Doe",
-		"company": "Example Corp",
-		"username": "janedoe",
-		"email": "jane.doe@example.com",
-		"address": "123 Main St",
-		"zip": "12345",
-		"state": "California",
-		"country": "USA",
-		"phone": "+1-555-1234",
-		"photo": "https://json-server.dev/ai-profiles/1.png"
-	}
-]
+"""" 24. Remove vowels from a string"""
+user_str = input("enter the string")
 
-print(j
+def remove_vowels(s):
+    vowels = ['a', 'e', 'i', 'o', 'u']
+    no_vowels = ""
+    for char in s:
+        if char.lower() not in vowels:
+            no_vowels = no_vowels + char
+
+    return no_vowels
+
+
+print(remove_vowels(user_str))
